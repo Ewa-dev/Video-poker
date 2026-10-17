@@ -14,21 +14,17 @@ export default function Rules() {
 
       <h2>Utbetalinger</h2>
       <p>
-        Royal Flush utbetaling = 2000 poeng Straight Flush med ess på topp
-        Straight Flush Utbetaling = 250 poeng En straight med alle kort i samme
-        farge. Eksempel: 3 ruter, 4 ruter, 5 ruter, 6 hjerter, 7 hjerter Fire
-        like Utbetaling = 125 poeng Fire matchende kort av samme rang. (Ved
-        målrettet menes 4 knekter eller konger, ikke bare 4 bildekort).
-        Eksempel: Kn-Kn-Kn-Kn Fullt hus Utbetaling = 40 poeng Tre matchende kort
-        av samme rang pluss to matchende kort av samme rang (tre like og et
-        par). Eksempel: 4-4-4-8-8 Flush Utbetaling = 25 poeng Alle kort i samme
-        farge. Eksempel: 3-7-8-Dronning-Ess der alle er hjerter. Straight
-        Utbetaling = 20 poeng Alle kort i rekkefølge. Eksempel: Ess-2-3-4-5 Tre
-        like Utbetaling = 15 poeng Tre matchende kort av samme rang. Eksempel:
-        K-K-K To par Utbetaling = 10 poeng Tro matchende kort av samme rang
-        pluss to ytterligere matchende kort av samme rang. Eksempel: Ess-Ess-5-5
-        Par Utbetaling = 5 poeng To matchende kort av samme rang. Eksempel:
-        Dame-Dame (kilden: internettcasinoer.net)
+        Royal Flush: 250,
+        Straight Flush: 100,
+        Four of a kind: 50,
+        Full house: 25,
+        Flush: 15,
+        Straight: 10,
+        Three of a kind: 5,
+        Two pair: 2.
+
+
+        (kilden: internettcasinoer.net)
       </p>
     </main>
   );

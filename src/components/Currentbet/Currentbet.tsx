@@ -2,10 +2,10 @@ import { useCounter } from "../../Store/store";
 import "./Currentbet.css";
 
 export default function CounterButton() {
-  const { count, increment, decrement } = useCounter();
+  const { bet, increment, decrement } = useCounter();
   return (
     <section>
-      <p> Nåværende innsats: {count}</p>
+      <p> Nåværende innsats: {bet}</p>
       <button type="button" onClick={decrement}>
         -
       </button>

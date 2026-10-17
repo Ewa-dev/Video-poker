@@ -1,3 +1,11 @@
+
+section {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
 button {
   background: rgb(52, 77, 9);
   color: white;

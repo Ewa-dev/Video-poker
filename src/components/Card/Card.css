@@ -4,6 +4,7 @@
   width: 80px;
   height: 100px;
   display: grid;
+  place-items: center;
 }
 
 .Card-backside {
