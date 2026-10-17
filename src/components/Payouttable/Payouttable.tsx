@@ -1,4 +1,4 @@
-import "./Payouttable.css";
+
 import type { Pokerhand } from "../../components/Pokerhand/Pokerhand";
 
 
