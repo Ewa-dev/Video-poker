@@ -1,15 +1,13 @@
 import { Pokerhand } from "./Pokerhand";
 
 type PokerhandProps = {
-    hand: Pokerhand;
+  hand: Pokerhand;
 };
 
-export default function PokerhandDisplay({
-    hand,
-}: PokerhandProps) {
-    return (
-        <section>
-            <p>{hand}</p>
-        </section>
-    );
+export default function PokerhandDisplay({ hand }: PokerhandProps) {
+  return (
+    <section>
+      <p>{hand}</p>
+    </section>
+  );
 }

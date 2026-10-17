@@ -1,6 +1,4 @@
-
 import type { Pokerhand } from "../../components/Pokerhand/Pokerhand";
-
 
 const payout: {
   hand: Pokerhand;
@@ -20,30 +18,30 @@ const payout: {
   { hand: "straight", name: "STRAIGHT", score: 10 },
 
   { hand: "three-of-a-kind", name: "TRHEE OF A KIND", score: 5 },
-  
+
   { hand: "two-pair", name: "TWO PAIR", score: 2 },
 ];
 
 type PayouttableProps = { bet: number };
 
 export default function Payouttable({ bet }: PayouttableProps) {
-    return (<>
-         <section>
-            <h2>Gevinster og utbetalinger</h2>
-            </section>
-        
+  return (
+    <>
+      <section>
+        <h2>Gevinster og utbetalinger</h2>
+      </section>
 
-<table>
-    <tbody>
-        {payout.map((item) => (
+      <table>
+        <tbody>
+          {payout.map((item) => (
             <tr key={item.hand}>
-                <td>{item.name}</td>
-                <td>{item.score}</td>
-                <td>{item.score + bet} mynter</td>
+              <td>{item.name}</td>
+              <td>{item.score}</td>
+              <td>{item.score + bet} mynter</td>
             </tr>
-        ))}
-    </tbody>
-</table>
-</>
-);
+          ))}
+        </tbody>
+      </table>
+    </>
+  );
 }

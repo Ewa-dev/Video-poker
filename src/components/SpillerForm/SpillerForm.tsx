@@ -8,9 +8,12 @@ type Spiller = {
 /*her skal vi hente en liste av spillere og med SetSpillereRegister lista skal endres  */
 export default function SpillerForm() {
   const [spillereRegister, setSpillereRegister] = useState<Spiller[]>(() => {
-    const lagretRegister = localStorage.getItem("spillere");/*her sjekkes det hvis det er noe spillere*/
+    const lagretRegister =
+      localStorage.getItem(
+        "spillere",
+      ); /*her sjekkes det hvis det er noe spillere*/
     if (!lagretRegister) {
-      return []; /*her blir det null hvis ingen spillere*/
+      return []; /*her blir det null hvis ingen spiller*/
     }
 
     return JSON.parse(lagretRegister);
@@ -26,8 +29,7 @@ export default function SpillerForm() {
 
     if (!spillerNavn) {
       return;
-    }/*vi sjekker hvis navn eksisterer*/
-
+    } /*vi sjekker hvis navn eksisterer*/
 
     /*vi oppreter en ny spiller som får 100mynter*/
     const nySpiller: Spiller = {
