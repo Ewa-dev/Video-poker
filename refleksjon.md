@@ -1,3 +1,9 @@
-Jeg laget 3 skjermbilder med bruk av React Router. Jeg bestemte å lage en pages mappe og der finnes det en side med regler, en side med logge inn mulighet og liste av spillere, og den tredje med spillet. I tillegg er home når man trykker på logo i header.
+Jeg laget 3 skjermbilder med bruk av React Router. Jeg bestemte å lage en pages mappe og der finnes det en side med regler, en side med logge inn mulighet og liste av spillere, og den tredje inneholde selve spillet.
 
-I prosjektet er det mange komponenter som card, total coins osv.
+I prosjektet var det mange komponenter som card, total coins osv. Jeg har brukt Zustand for å håndtere tilstanden som flere komponenter i spillet trenger tilgang til. Jeg har brukt den til å lagre kortstokken (deck), kortene på hånden (hand), spillerinformasjon (player), innsatsen (bet) og om en runde er aktiv (roundActive). Jeg har også lagt funksjoner som startRound(), drawCards(), incrementBet() og decrementBet() i Zustand-store. Dette gjør at komponentene kan bruke de samme funksjonene og oppdatere spilltilstanden uten å måtte sende data mellom mange komponenter gjennom props.
+
+Det var noen feil underveis. Blant annet fungerte ikke knappene for å øke og redusere innsatsen. De fungerte med det første, men etter jeg endret litt koden gjorde det de ikke lenger. Problemet var at navnene av funskjonene ikke stemte med navnene i Zustand-store. Jeg måtte også tilpasse Deal.tsx slik at den brukte funksjonene fra store i stedet for å ha sin egen tilstand. Jeg løste problemene ved å gå gjennom koden og kontrollere at komponentene brukte de riktige funksjonene.
+
+Det fortsatt mangles litt for å ha "full versjon" av poker, blant annet totalcoins og å holde av kort mulighet.
+
+Gjennom arbeidet har jeg lært at det er viktig å ha en tydelig struktur i prosjektet og forstå hvordan komponentene samarbeider. Jeg har også erfart at små feil kan ta lang tid for å fikse dem.Jeg brukte studiematerialer og prøvde mye når jeg fikk feil. Som hver prosjekt visste Video Poker at å lage en nettside tar enormt mye tid, spesielt for juniorer.
