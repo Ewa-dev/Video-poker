@@ -21,7 +21,8 @@ export default function Rules() {
         Flush: 15,
         Straight: 10,
         Three of a kind: 5,
-        Two pair: 2.
+        Two pair: 2,
+        One pair: 1.
 
 
         (kilden: internettcasinoer.net)

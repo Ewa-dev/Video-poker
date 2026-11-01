@@ -1,8 +1,19 @@
 .cards-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card-button {
+  background: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.card-selected {
+  border: 2px solid green;
+  background: transparent;
 }
